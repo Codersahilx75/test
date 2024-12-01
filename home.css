@@ -1,0 +1,591 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+.ud-btn {
+    border-radius: 12px;
+    display: inline-block;
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 0;
+    padding: 13px 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
+    transition: all .4s ease;
+   
+  
+  }
+
+
+
+
+
+.ud-btn i {
+    margin-left: 10px;
+    font-size: 16px;
+    /* transform: rotate(-45deg) */
+}
+
+.ud-btn:active,.ud-btn:focus,.ud-btn:hover {
+    outline: none;
+    box-shadow: none
+}
+
+@media(max-width: 339px) {
+    .ud-btn {
+        padding:13px 25px
+    }
+}
+
+.ud-btn2 {
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    transition: all .4s ease
+}
+
+.ud-btn2 i {
+    margin-left: 10px;
+    font-size: 16px;
+    transform: rotate(-45deg)
+}
+
+.ud-btn2:hover {
+    outline: none
+}
+.btn-thm {
+    background-color: #eb6753;
+    border: 1px solid #eb6753;
+    color: #fff
+}
+
+.btn-dark {
+    background-color: var(--headings-color);
+    border: 1px solid var(--headings-color);
+    color: #fff
+}
+
+.btn-dark:before,.btn-gray:before,.btn-light-gray:before,.btn-thm-border:before,.btn-thm2:before,.btn-thm3:before,.btn-thm:before,.btn-transparent2:before,.btn-transparent:before,.btn-white:before,.ud-btn:before {
+    background-color: #ee4c34;
+    content: "";
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    transform: skew(50deg);
+    transition: width .6s;
+    transform-origin: top left
+}
+
+.btn-dark:hover,.btn-gray:hover,.btn-light-gray:hover,.btn-thm-border:hover,.btn-thm2:hover,.btn-thm3:hover,.btn-thm:hover,.btn-transparent2:hover,.btn-transparent:hover,.btn-white:hover,.ud-btn:hover {
+    color: #fff
+}
+
+.btn-dark:hover:before,.btn-gray:hover:before,.btn-light-gray:hover:before,.btn-thm-border:hover:before,.btn-thm2:hover:before,.btn-thm3:hover:before,.btn-thm:hover:before,.btn-transparent2:hover:before,.btn-transparent:hover:before,.btn-white:hover:before,.ud-btn:hover:before {
+    height: 100%;
+    width: 200%
+}
+
+.new{
+    display: flex;
+    align-items: center;
+}
+/* .container {
+    max-width:1400px;
+
+    margin: 0 auto; 
+} */
+
+.dark{
+    background-image: url('./header-logo.svg');
+}
+
+.normal{
+    background-image: url('./header-logo2.svg');
+}
+.imgback{
+    
+        background-image: url('./home-2.2c0c96c4.jpg');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        height: 650px;
+        max-width:1400px;
+        position: absolute;
+        top: 200px;
+        width: au;
+        z-index: 1;
+        
+    }
+.card:hover{background-color: #eb6753;
+    color:#fff;
+
+    
+
+}
+
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden; /* Hide content that overflows */
+  }
+  
+  .mySlides {
+    display: none; /* Hide all slides initially */
+  }
+  
+  /* .fade {
+    animation: fade 1.5s ease-in-out infinite;
+  } */
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    50% { opacity: 1; }
+    70% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  .card {
+    border-radius: 10px;
+
+  }
+    .cards-wrapper {
+        display: flex;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      
+      .card {
+        flex-shrink: 0;
+      }
+
+
+.container-main{
+    max-width: 1200px !important;
+
+}
+
+
+
+
+
+/* Common Styling for both carousels */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Cards Wrapper Styling */
+  .cards-wrapper {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Individual Card Styling */
+  .card {
+    flex-shrink: 0;
+    /* width: 100%; Full width on mobile */
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 640px) {
+    .card {
+      width: 33%; /* 3 cards on medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: 30%; /* 3 cards on large screens */
+    }
+  }
+  
+  /* Navigation 
+  s Styling */
+  /* button {
+   
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+  } */
+  
+  /* .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  } */
+  
+
+
+
+
+/* Make sure these styles do not conflict with the first or second carousel */
+.carousel-container {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card {
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure 4 cards are visible at a time */
+.carousel-card {
+    width: 25%; /* Adjust the width of each card to show 4 at once */
+}
+
+/* button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+} */
+
+/* button:focus {
+    outline: none;
+} */
+
+
+.imges:hover{
+    transform: scale(1.5);
+}
+
+.carousel-container {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .cards-wrapper {
+    scroll-snap-align: start;
+  }
+  
+
+
+/* .third-cards-wrapper {
+    overflow-x: auto;  
+    scroll-snap-type: x mandatory; 
+    display: flex;
+  } */
+  .third-cards-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+  }
+  
+  .carousel-card {
+    flex-shrink: 0;
+    width: calc(33.33% - 16px); /* Adjust card size as needed */
+    margin-right: 16px;
+  }
+  
+
+  .animate{
+     animation: spin 10s linear infinite;
+
+  }
+
+
+ 
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  .ani{
+    transform: scale(1.5)
+  }
+
+
+  .bounce-animation {
+    animation: bounce-up 3.5s ease-in-out infinite; /* Apply bounce-up animation */
+  }
+
+
+  @keyframes bounce-up {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    25% {
+      transform: translateY(-15px); /* Move up */
+    }
+    50% {
+      transform: translateY(0); /* Return to original position */
+    }
+    75% {
+      transform: translateY(-10px); /* Slight move up again */
+    }
+    100% {
+      transform: translateY(0); /* Final return to original position */
+    }
+  }
+
+
+  .container-main {
+    max-width: 1200px;
+    margin: 0 auto; /* Center alignment */
+  }
+
+
+
+
+  #pagination-dots span {
+  width: 6px; /* डॉट का आकार छोटा */
+  height: 6px;
+}
+
+@media (min-width: 768px) {
+  #pagination-dots span {
+    width: 8px; /* मीडियम स्क्रीन पर थोड़ा बड़ा */
+    height: 8px;
+  }
+}
+
+
+.slider-container {
+  width: 100%; /* Full container width */
+  overflow: hidden; /* Hide overflow */
+}
+
+.newimage img {
+  flex-shrink: 0;
+}
+
+
+
+
+
+.app-info{
+  background-color: hsla(0, 0%, 100%, 0.4%);
+  border-radius: 12px;
+  /* width: 210px; */
+  transition: all 0.4s ease;
+}
+
+
+.sub{
+
+  background-color: hsla(0, 0%, 100%, 0.4%);
+
+}
+
+
+
+
+
+
+/* Container for absolute positioning */
+.bg-white {
+  position: relative;
+}
+
+/* Base styles for the absolute-div */
+.absolute-div {
+  position: absolute;
+  top: 225px;
+  width:1500px;
+  padding-left: 20px;
+  
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 640px) {
+  .absolute-div {
+    top: 255px; /* Adjust top positioning */
+    /* bottom: 0;    Position it at the bottom for mobile */
+    width:395px; /* Set width to fit the screen */
+    padding-left: 49px; /* Add some padding for better spacing */
+  }
+
+  .absolute-div .container-main {
+    flex-direction: column; /* Stack content vertically */
+    gap: 16px; /* Add space between stacked elements */
+  }
+
+  .absolute-div .text-white {
+    text-align: center; /* Center-align the text for better readability */
+  }
+
+  .absolute-div h4 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .absolute-div img {
+    width: 100%; /* Make the image responsive */
+    max-width: 200px; /* Limit the max size */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .absolute-div button {
+    width: 100%; /* Full-width button */
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .app-info {
+    flex-direction: row;
+    width: 100%; /* Buttons take full width */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+  .app-info i {
+    font-size: 20px; /* Icon size for small screens */
+  }
+  .app-info div p {
+    font-size: 12px; /* Text size for small screens */
+  }
+}
+
+
+.outline{
+  
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    outline: 3px solid #c4c640;
+    text-align: center;
+    width: 44px;
+
+}
+
+.star{
+  
+  color:#c4c640 ;
+}
+
+
+.input {
+  background-color: #82ddd0;
+  width: 56.2748%;
+  height: 100%;
+  border-top-left-radius: 10px; /* Adjust radius as needed */
+  border-bottom-left-radius: 10px;
+}
+
+.inputs {
+  background-color: #80a1cc;
+  width: 32.7942%;
+  height: 100%;
+}
+
+.inputse {
+  background-color: #f5dd86;
+  width: 10.931%;
+  height: 100%;
+  border-top-right-radius: 10px; /* Adjust radius as needed */
+  border-bottom-right-radius: 10px;
+}
+
+
+.smaller{
+  color: #82ddd0;
+}
+.chart-btn {
+  padding: 5px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.chart-btn:hover {
+  border-bottom: 1px solid black;  /* Green color on hover */
+}
+
+.chart-btn.active {
+  border-bottom: 1px solid black;  /* Red color for active state */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+

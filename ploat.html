@@ -1,0 +1,2250 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="  ">
+
+    <!-- header start here -->
+    <div>
+        <header id="header" class="fixed top-0 left-0 w-full z-50 shadow-md transition-all duration-300">
+            <nav class="container mx-auto flex justify-between items-center py-5 px-4 lg:px-0" style="height: 70px;">
+                <div class="flex space-x-10 items-center">
+                    <div>
+                        <!-- Dynamic logo -->
+                        <img id="headerLogo" data-dark="./header-logo.svg" data-light="./header-logo2.svg"
+                            class="h-8 sm:h-10">
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a
+                                href="Home.html">Home</a></p>
+                        <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a
+                                href="About.html">About</a></p>
+                        <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a
+                                href="contact.html">Contact</a></p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 sm:space-x-6">
+                    <div class="hidden lg:block font-bold text-xs sm:text-sm "><i class="fa-solid fa-phone mr-2"></i>2
+                        911 098
+                        7654</div>
+                    <div class="hidden md:block font-bold text-xs sm:text-sm cursor-pointer"><a href="login.html">Login
+                            / Register</a></div>
+                    <div class="hidden sm:block ud-btn border-2 px-4 py-2 rounded-full text-xs sm:text-sm">Add Property
+                    </div>
+                    <div>
+                        <img id="headerNav" data-dark="./nav-icon-dark.svg" data-light="./nav-icon-white.svg"
+                            class="h-4 sm:h-4 cursor-pointer">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- header ends here -->
+
+
+
+    <div class="mt-40 container-main">
+
+        <!-- First Content -->
+        <div class="flex flex-col lg:flex-row justify-between gap-6">
+            <!-- Left Content -->
+            <div class="space-y-4">
+                <h3 class="text-3xl font-semibold">Equestrian Family Home</h3>
+                <p>New York City, CA, USA</p>
+                <div class="flex flex-wrap gap-4 items-center text-gray-600">
+                    <p class="flex items-center  ">
+                        <i class="fa-solid fa-circle text-xs hover:text-red-500"></i>
+                    <p class="hover:text-red-500"> For sale</p>
+
+                    </p>
+                    <p class="flex items-center gap-1">
+                        <i class="fa-regular fa-clock hover:text-red-500"></i>
+                    <p class="hover:text-red-500">6 years ago</p>
+
+                    </p>
+                    <p class="flex items-center gap-1">
+                        <i class="fa-solid fa-up-right-from-square hover:text-red-500"></i>
+                    <p class="hover:text-red-500">8721</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="space-y-4">
+                <!-- Icons Row -->
+                <div class="flex justify-start lg:justify-end gap-4 items-center">
+                    <i class="fa-regular fa-heart border-2 text-xl py-2 px-2 rounded-lg hover:border-black"></i>
+                    <i class="fa-regular fa-square-plus border-2 text-xl py-2 px-2 rounded-lg hover:border-black"></i>
+                    <i class="fa-solid fa-share-nodes border-2 text-xl py-2 px-2 rounded-lg hover:border-black"></i>
+                    <i class="fa-solid fa-print border-2 text-xl py-2 px-2 rounded-lg hover:border-black"></i>
+                </div>
+
+
+                <!-- Pricing Details -->
+                <div class="text-left lg:text-right">
+                    <h3 class="font-bold text-3xl">$14,000</h3>
+                    <p class="text-md text-gray-600">$11.67/sq ft</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- First Content Ends -->
+
+
+
+        <!-- Second Image Content -->
+        <div class="flex flex-col lg:flex-row items-center mt-10 mb-10 space-x-2">
+
+            <!-- Main Image -->
+            <div class="w-full lg:w-[90%] overflow-hidden">
+                <img src="./img/listing-single-1.jpg" alt=""
+                    class="w-full rounded-md transform transition duration-300 hover:scale-110">
+            </div>
+
+            <!-- Additional Images -->
+            <div class="w-full lg:w-[25%] space-y-4 overflow-hidden mt-4 lg:mt-0">
+                <img src="./img/listing-single-2.jpg" alt=""
+                    class="w-full rounded-md transform transition duration-300 hover:scale-110">
+                <img src="./img/listing-single-3.jpg" alt=""
+                    class="w-full rounded-md transform transition duration-300 hover:scale-110">
+            </div>
+
+        </div>
+
+        <!-- Second Image Content Ends -->
+
+
+
+
+
+        <!-- img content -->
+
+        <div class="mb-10 flex flex-wrap justify-between items-center gap-4">
+
+            <!-- Bedroom -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-solid fa-bed border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Bedroom</h4>
+                    <p>1</p>
+                </div>
+            </div>
+
+            <!-- Bath -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-solid fa-shower border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Bath</h4>
+                    <p>2</p>
+                </div>
+            </div>
+
+            <!-- Year Built -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-solid fa-calendar-days border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Year Built</h4>
+                    <p>2018</p>
+                </div>
+            </div>
+
+            <!-- Garage -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-solid fa-warehouse border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Garage</h4>
+                    <p>2</p>
+                </div>
+            </div>
+
+            <!-- Square Feet -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-brands fa-uncharted border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Sqrt</h4>
+                    <p>1200</p>
+                </div>
+            </div>
+
+            <!-- Property Type -->
+            <div class="flex gap-2 items-center w-full sm:w-auto">
+                <div>
+                    <i class="fa-solid fa-house border-2 py-3 px-5 rounded-md text-2xl hover:border-black"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">Property Type</h4>
+                    <p>Houses</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- img content ends -->
+
+    </div>
+
+
+
+
+
+
+    <div class="bg-gray-100">
+        <div class="container-main pt-20 px-4 md:px-8">
+
+            <div class="flex flex-col md:flex-row space-y-6 md:space-x-10 md:space-y-0">
+                <!-- Property Description Section -->
+                <div class="bg-white rounded-md w-full md:w-[70%] p-5 space-y-5">
+
+                    <div class="space-y-5">
+                        <h5 class="font-bold text-xl">Property Description</h5>
+                        <p>This 3-bed with a loft, 2-bath home in the gated community of The Hideout has it all.
+                            From the open floor plan to the abundance of light from the windows, this home is perfect
+                            for entertaining.
+                            The living room and dining room have vaulted ceilings and a beautiful fireplace. You will
+                            love
+                            spending time on the deck taking in the beautiful views. In the kitchen,
+                            you'll find stainless steel appliances and a tile backsplash, as well as a breakfast bar.
+                        </p>
+
+                        <p class="cursor-pointer underline font-semibold">Show More</p>
+                    </div>
+
+                    <h3 class="mb-4 font-bold">Property Details</h3>
+
+                    <div class="flex flex-col md:flex-wrap md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <!-- First Table -->
+                        <div class="w-full sm:w-[45%] lg:w-[30%]">
+                            <table class="w-full text-left">
+                                <tbody>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Property ID</th>
+                                        <td class="text-gray-600">RT48</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Price</th>
+                                        <td class="text-gray-600">$252,000</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Property Size</th>
+                                        <td class="text-gray-600">1500 Sq Ft</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Bathrooms</th>
+                                        <td class="text-gray-600">3</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Bedrooms</th>
+                                        <td class="text-gray-600">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Second Table -->
+                        <div class="w-full sm:w-[45%] lg:w-[30%]">
+                            <table class="w-full text-left">
+                                <tbody>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Garage</th>
+                                        <td class="text-gray-600">2</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Garage Size</th>
+                                        <td class="text-gray-600">200 SqFt</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Year Built</th>
+                                        <td class="text-gray-600">2022</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Property Type</th>
+                                        <td class="text-gray-600">Apartment</td>
+                                    </tr>
+                                    <tr class="py-2">
+                                        <th class="font-medium text-gray-700 pr-4">Property Status</th>
+                                        <td class="text-gray-600">For Sale</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Property Owner Contact Section -->
+                <div class="bg-white shadow-lg rounded-md p-6 flex flex-col space-y-6 w-full md:w-[30%]">
+                    <!-- Section Title -->
+                    <h4 class="font-bold text-lg mb-6">Get More Information</h4>
+
+                    <div class="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-6 w-full max-w-4xl">
+                        <!-- Agent Information -->
+                        <div class="flex items-center space-x-4 mb-6 lg:mb-4">
+                            <div>
+                                <img src="./img/agent-3.png" alt="Agent"
+                                    class="w-20 h-20 rounded-full object-cover border border-gray-300 shadow-lg  transform transition duration-300 hover:scale-110" />
+                            </div>
+                            <div class="space-y-2 text-center lg:text-left">
+                                <h5 class="font-semibold text-xl">Arlene McCoy</h5>
+                                <span
+                                    class="flex items-center justify-center lg:justify-start space-x-2 cursor-pointer">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>(920) 012-3421</p>
+                                </span>
+                                <p class="cursor-pointer underline">View Listings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="w-full max-w-md">
+                        <form>
+                            <!-- Name -->
+                            <div class="mb-4">
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+                                    id="name" type="text" placeholder="Your Name" required />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-4">
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+                                    id="email" type="email" placeholder="Your Email" required />
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="mb-4">
+                                <input
+                                    class="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+                                    id="phone" type="tel" placeholder="Your Phone" required />
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="mb-4">
+                                <textarea
+                                    class="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-black"
+                                    placeholder="Hello,I am interested in[Renovated apartment at last floor]"></textarea>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="flex items-center mb-6">
+                                <input class="mr-2" type="checkbox" id="terms" required />
+                                <label class="text-sm text-gray-700" for="terms">
+                                    By submitting this form, I agree to the terms of use.
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex items-center justify-center">
+                                <button class="ud-btn border-2 font-bold py-2 px-4 rounded-lg flex items-center"
+                                    type="submit">
+                                    <h6 class="text-lg">Submit a Tour Request</h6>
+                                    <i class="fa-solid fa-square-up-right ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Address and Map Section -->
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+                <h5 class="font-bold text-lg">Address</h5>
+                <div class="flex flex-wrap gap-4">
+                    <!-- First Table -->
+                    <div class="w-full sm:w-[48%] lg:w-[30%]">
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">Address</th>
+                                    <td class="text-gray-600">10425 Tabor St</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">City</th>
+                                    <td class="text-gray-600">Los Angeles</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">State/County</th>
+                                    <td class="text-gray-600">California</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Second Table -->
+                    <div class="w-full sm:w-[48%] lg:w-[30%]">
+                        <table class="w-full text-left">
+                            <tbody>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">Address</th>
+                                    <td class="text-gray-600">10 Downing Street</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">City</th>
+                                    <td class="text-gray-600">London</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th class="font-semibold text-gray-700 pr-4">State/County</th>
+                                    <td class="text-gray-600">Greater London</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="mt-6 flex justify-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51536.77970002441!2d-118.4864813337663!3d34.02490456890988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba2c347cc46f%3A0x99a21916b2cf28e4!2sPalms%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1732489087229!5m2!1sen!2sin"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="rounded-md">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <!-- Address and Map Section ends -->
+
+
+
+            <!-- feature start -->
+
+
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+                <h3 class="font-semibold text-lg">Features & Amenities</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="space-y-2">
+                        <li>Air Conditioning</li>
+                        <li>Barbeque</li>
+                        <li>Dryer</li>
+                        <li>Gym</li>
+                    </div>
+                    <div class="space-y-2">
+                        <li>Lawn</li>
+                        <li>Microwave</li>
+                        <li>Outdoor Shower</li>
+                        <li>Refrigerator</li>
+                    </div>
+                    <div class="space-y-2">
+                        <li>Swimming Pool</li>
+                        <li>TV Cable</li>
+                        <li>Washer</li>
+                        <li>WiFi6</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Class Section -->
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+                <h3 class="font-semibold text-lg">Energy Class</h3>
+                <div>
+                    <table class="w-full text-left">
+                        <tbody>
+                            <tr>
+                                <td class="py-2 text-gray-700">Global Energy Performance Index</td>
+                                <td class="py-2 text-gray-600">A+</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-700">Renewable Energy Performance Index</td>
+                                <td class="py-2 text-gray-600">92.42 kWh / m²a</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-700">Energy Performance of the Building</td>
+                                <td class="py-2 text-gray-600">00.00 kWh / m²a</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-700">EPC Current Rating</td>
+                                <td class="py-2 text-gray-600">92</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 text-gray-700">EPC Potential Rating</td>
+                                <td class="py-2 text-gray-600">80+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="mt-6 flex justify-center">
+                        <img src="./img/energy-class.png" alt="Energy Class" class="w-full ">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Class Section  ends -->
+
+
+
+            <!-- floor details  -->
+
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+                <h3 class="font-semibold text-lg ">Floor Plans</h3>
+
+                <div class="flex flex-col space-y-10">
+                    <!-- First Floor Details -->
+                    <div class="floor-item">
+                        <div class="flex items-center justify-between border-b-2 py-6 cursor-pointer flex-col sm:flex-row"
+                            onclick="toggleFloor(this)">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span>First Floor</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-4 sm:mt-0">
+                                <div class="flex">
+                                    <h5 class="font-semibold">Size:</h5><span>1267 Sqft</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bedrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bathrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Price</h5><span>$920,99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden overflow-hidden transition-all max-h-0">
+                            <img src="img/first.png" alt="First Floor Image" class="w-full">
+                        </div>
+                    </div>
+
+                    <!-- Second Floor Details -->
+                    <div class="floor-item">
+                        <div class="flex items-center justify-between border-b-2 py-6 cursor-pointer flex-col sm:flex-row"
+                            onclick="toggleFloor(this)">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span>Second Floor</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-4 sm:mt-0">
+                                <div class="flex">
+                                    <h5 class="font-semibold">Size:</h5><span>1267 Sqft</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bedrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bathrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Price</h5><span>$920,99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden overflow-hidden transition-all max-h-0">
+                            <img src="img/first.png" alt="Second Floor Image" class="w-full">
+                        </div>
+                    </div>
+
+                    <!-- Third Floor Details -->
+                    <div class="floor-item">
+                        <div class="flex items-center justify-between border-b-2 py-6 cursor-pointer flex-col sm:flex-row"
+                            onclick="toggleFloor(this)">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span>Third Floor</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-4 sm:mt-0">
+                                <div class="flex">
+                                    <h5 class="font-semibold">Size:</h5><span>1267 Sqft</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bedrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Bathrooms</h5><span>2</span>
+                                </div>
+                                <div class="flex">
+                                    <h5 class="font-semibold">Price</h5><span>$920,99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden overflow-hidden transition-all max-h-0">
+                            <img src="img/first.png" alt="Third Floor Image" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- floor details ends -->
+
+
+            <!-- video content -->
+
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+                <div>
+                    <h3 class="font-semibold text-lg">Video</h3>
+                </div>
+                <div class="relative">
+                    <!-- Thumbnail and Play Button -->
+                    <img src="./img/videoimg.jpeg" alt="Video Thumbnail" class="rounded-md w-full">
+                    <div class="absolute lg:top-36 left-1/2 transform -translate-x-1/2 top-14">
+                        <button
+                            class="text-2xl border-2 p-6 rounded-full w-10 h-10 flex items-center justify-center transform hover:scale-90 transition duration-300 ease-out sm:w-12 sm:h-12 sm:p-10 "
+                            onclick="showVideo()">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-page Video Modal for small screens -->
+            <div id="videoOverlay" class="fixed inset-0 hidden flex items-center justify-center z-50">
+                <div class="relative w-full h-full sm:w-[800px] sm:h-[450px]">
+                    <button onclick="hideVideo()" class="absolute top-4 right-4 text-white text-3xl">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/oqNZOOWF8qM?autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- video content ends -->
+
+
+
+            <!-- 360 view -->
+
+
+            <div class="bg-white mt-10 p-5 space-y-6 md:w-[68%] w-full rounded-md">
+
+
+                <div>
+                    <h3 class="font-semibold text-lg">360° Virtual Tour</h3>
+                </div>
+
+
+                <div class="">
+                    <img src="./img/kichen.jpg" alt="" class=" rounded-md w-full">
+                </div>
+
+            </div>
+
+
+            <!-- 360 view ends -->
+
+
+
+            <!-- About Information  -->
+            <div class="bg-white mt-10 p-5 space-y-6 w-full md:w-[68%] rounded-md">
+                <div>
+                    <h3 class="font-semibold text-lg">What's Nearby?</h3>
+                </div>
+
+                <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md">
+                    <!-- Tabs -->
+                    <div
+                        class="border-b-2 flex flex-wrap space-x-6 overflow-x-auto md:space-x-8 md:flex-row flex-col items-center">
+                        <h3 id="education-tab"
+                            class="tab font-medium text-lg cursor-pointer text-gray-500 hover:text-black hover:border-b-2 hover:border-black py-2"
+                            onclick="showContent('education')">Education</h3>
+                        <h3 id="health-tab"
+                            class="tab font-medium text-lg cursor-pointer text-gray-500 hover:text-black hover:border-b-2 hover:border-black py-2"
+                            onclick="showContent('health')">Health & Medical</h3>
+                        <h3 id="transportation-tab"
+                            class="tab font-medium text-lg cursor-pointer text-gray-500 hover:text-black hover:border-b-2 hover:border-black py-2"
+                            onclick="showContent('transportation')">Transportation</h3>
+                    </div>
+
+                    <!-- Content sections (hidden by default, shown when tab is clicked) -->
+                    <!-- Education Content -->
+                    <div id="education" class="tab-content space-y-8">
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>4/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">South Londonderry Elementary School</h4>
+                                    <p>Grades: PK-6 Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Londonderry Senior High School</h4>
+                                    <p>Grades: PK-6 Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Londonderry Middle School</h4>
+                                    <p>Grades: PK-6 Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health & Medical Content -->
+                    <div id="health" class="tab-content hidden space-y-8">
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>4/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Health Facility 1</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Health Facility 2</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Health Facility 3</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transportation Content -->
+                    <div id="transportation" class="tab-content hidden space-y-8">
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>4/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Transportation 1</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Transportation 2</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap justify-between items-center space-y-4 md:space-y-0">
+                            <div class="flex space-x-4">
+                                <div class="outline">
+                                    <span>5/10</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Transportation 3</h4>
+                                    <p>Distance: 3.7 mi</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="flex">
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                    <i class="fa-solid fa-star text-xs star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- About Information  ends -->
+
+
+
+            <!-- walkscrore -->
+
+            <div class="bg-white mt-10 p-5 space-y-6 w-full  rounded-md md:w-[68%] ">
+                <!-- Walkscore Title -->
+                <div>
+                    <h3 class="font-semibold text-lg text-center md:text-left">Walkscore</h3>
+                </div>
+
+                <!-- Address -->
+                <div>
+                    <h3 class="text-2xl text-center md:text-left">
+                        10425 Tabor St, Los Angeles, CA 90034, USA
+                    </h3>
+                </div>
+
+                <!-- Scores Section -->
+                <div class="space-y-6">
+                    <!-- Walk Score -->
+                    <div class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-2 sm:space-y-0">
+                        <div
+                            class="bg-red-50 w-20 h-20 flex justify-center items-center rounded-full transform transition duration-300 hover:scale-110">
+                            <i class="fa-solid fa-person-walking text-3xl text-red-500 "></i>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="font-medium">Walk Score</h4>
+                            <p>57 / 100 (Somewhat Walkable)</p>
+                        </div>
+                    </div>
+
+                    <!-- Transit Score -->
+                    <div class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-2 sm:space-y-0">
+                        <div
+                            class="bg-red-50 w-20 h-20 flex justify-center items-center rounded-full transform transition duration-300 hover:scale-110">
+                            <i class="fa-solid fa-truck-front text-3xl text-red-500"></i>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="font-medium">Transit Score</h4>
+                            <p>27 / 100 (Some Transit)</p>
+                        </div>
+                    </div>
+
+                    <!-- Bike Score -->
+                    <div class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-2 sm:space-y-0">
+                        <div
+                            class="bg-red-50 w-20 h-20 flex justify-center items-center rounded-full transform transition duration-300 hover:scale-110">
+                            <i class="fa-solid fa-person-biking text-3xl text-red-500"></i>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="font-medium">Bike Score</h4>
+                            <p>45 / 100 (Somewhat Bikeable)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- walkscore ends -->
+
+
+
+            <!-- mortage calculatore -->
+
+
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%]">
+
+                <!-- Heading Section -->
+                <div>
+                    <h3 class="font-semibold text-lg text-center md:text-left">Mortgage Calculator</h3>
+                </div>
+
+                <!-- Separator (Optional visual style) -->
+                <div class="bg-red-50 flex w-full h-3 mt-10">
+                    <div class="input"></div>
+                    <div class="inputs"></div>
+                    <div class="inputse"></div>
+                </div>
+
+                <!-- Information Section (3 columns for large screens) -->
+                <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 border-b-2 pb-6">
+                    <!-- Left Section -->
+                    <div class="space-y-4 w-full md:w-1/2">
+                        <!-- Principal and Interest -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <div class="smaller w-3 h-3 rounded-full bg-[#82ddd0]"></div>
+                                <h5 class="font-medium text-gray-800">Principal and Interest</h5>
+                            </div>
+                            <p class="text-gray-700">$2,412</p>
+                        </div>
+
+                        <!-- Homeowners' Insurance -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <div class="smaller w-3 h-3 rounded-full bg-[#82ddd0]"></div>
+                                <h5 class="font-medium text-gray-800">Homeowners' Insurance</h5>
+                            </div>
+                            <p class="text-gray-700">$2,412</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="w-full md:w-1/3">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <div class="smaller w-3 h-3 rounded-full bg-[#82ddd0]"></div>
+                                <h5 class="font-medium text-gray-800">Property Taxes</h5>
+                            </div>
+                            <p class="text-gray-700">$2,412</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="flex mt-12 px-6">
+                    <!-- Center form only on small screens (sm) -->
+                    <form class="w-full sm:w-96 md:w-[32rem] lg:w-[40rem] mx-auto sm:mx-0">
+                        <!-- Mortgage Calculator Form -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+
+                            <!-- Left Section -->
+                            <div class="space-y-12">
+                                <!-- Total Amount -->
+                                <div class="mb-4">
+                                    <label for="total-amount" class="block text-gray-700 text-sm font-bold mb-2">Total
+                                        Amount</label>
+                                    <input type="number" id="total-amount" name="total-amount"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="$250" required />
+                                </div>
+
+                                <!-- Down Payment -->
+                                <div class="mb-4">
+                                    <label for="down-payment" class="block text-gray-700 text-sm font-bold mb-2">Down
+                                        Payment</label>
+                                    <input type="number" id="down-payment" name="down-payment"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="$2304" required />
+                                </div>
+
+                                <!-- Interest Rate -->
+                                <div class="mb-4">
+                                    <label for="interest-rate"
+                                        class="block text-gray-700 text-sm font-bold mb-2">Interest Rate (%)</label>
+                                    <input type="number" step="0.01" id="interest-rate" name="interest-rate"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="3.5%" required />
+                                </div>
+                            </div>
+
+                            <!-- Right Section -->
+                            <div class="space-y-12">
+                                <!-- Loan Terms (Years) -->
+                                <div class="mb-4">
+                                    <label for="loan-terms" class="block text-gray-700 text-sm font-bold mb-2">Loan
+                                        Terms (Years)</label>
+                                    <input type="number" id="loan-terms" name="loan-terms"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="12" required />
+                                </div>
+
+                                <!-- Property Tax -->
+                                <div class="mb-4">
+                                    <label for="property-tax"
+                                        class="block text-gray-700 text-sm font-bold mb-2">Property Tax</label>
+                                    <input type="number" id="property-tax" name="property-tax"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="$1000" required />
+                                </div>
+
+                                <!-- Home Insurance -->
+                                <div class="mb-4">
+                                    <label for="home-insurance" class="block text-gray-700 text-sm font-bold mb-2">Home
+                                        Insurance</label>
+                                    <input type="number" id="home-insurance" name="home-insurance"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="$1000" required />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="">
+                            <button type="submit" class="ud-btn border-2">
+                                Calculate <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <!-- mortage calculatore  ends-->
+
+
+
+
+
+
+            <!-- Include Chart.js -->
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%]">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg text-center md:text-left">Property View</h3>
+                    </div>
+
+                    <!-- Buttons for chart selection -->
+                    <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
+                        <button id="hours"
+                            class="chart-btn active w-full md:w-auto py-2 px-4 text-center">Hours</button>
+                        <button id="weekly" class="chart-btn w-full md:w-auto py-2 px-4 text-center">Weekly</button>
+                        <button id="monthly" class="chart-btn w-full md:w-auto py-2 px-4 text-center">Monthly</button>
+                    </div>
+                </div>
+
+                <!-- Chart Container -->
+                <div class="mt-6">
+                    <canvas id="dualYAxisChart" class="w-full h-[300px] md:h-[400px]"></canvas>
+                </div>
+            </div>
+
+
+
+            <!-- charts ends -->
+
+
+            <!-- Home Value start -->
+
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%]">
+                <div>
+                    <h3 class="font-semibold text-lg text-center md:text-left">Home Value</h3>
+                </div>
+
+                <!-- Home Value Chart -->
+                <div class="mt-6">
+                    <canvas id="homeValueChartNew" class="w-full h-[400px]"></canvas>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Home value ends -->
+
+
+            <!-- get contact -->
+
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%] ">
+
+                <!-- Section Heading -->
+                <div>
+                    <h3 class="font-semibold text-lg text-center md:text-left">Get Information</h3>
+                </div>
+
+                <!-- Agent Information -->
+                <div
+                    class="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-6 w-full max-w-4xl border-b-2 pb-6">
+                    <!-- Agent Info Section -->
+                    <div class="flex items-center space-x-4 mb-6 lg:mb-4 w-full">
+                        <img src="./img/agent-3.png" alt="Agent"
+                            class="w-20 h-20 rounded-full object-cover border border-gray-300 shadow-lg transform transition duration-300 hover:scale-110" />
+                        <div class="space-y-2 text-center lg:text-left w-full">
+                            <h5 class="font-semibold">Arlene McCoy</h5>
+                            <div
+                                class="flex flex-col lg:flex-row items-center justify-center lg:justify-start space-y-2 lg:space-x-4 cursor-pointer">
+                                <div class="hover:text-red-500 flex justify-center items-center space-x-2">
+                                    <i class="fa-solid fa-phone hover:text-red-500"></i>
+                                    <p class="font-light">(920) 012-3421 |</p>
+                                </div>
+                                <div class="hover:text-red-500 flex justify-center items-center space-x-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p class="font-light">(920) 012-4390 |</p>
+                                </div>
+                                <div class="hover:text-red-500 flex justify-center items-center space-x-2"><i
+                                        class="fa-brands fa-whatsapp"></i>
+                                    <p class="font-light"> WhatsApp</p>
+                                </div>
+                            </div>
+                            <!-- Social Media Icons -->
+                            <div class="flex space-x-4 justify-center lg:justify-start mt-2">
+                                <div><i class="fa-brands fa-facebook text-md hover:text-red-500"></i></div>
+                                <div><i class="fa-brands fa-twitter text-md hover:text-red-500"></i></div>
+                                <div><i class="fa-brands fa-instagram text-md hover:text-red-500"></i></div>
+                                <div><i class="fa-brands fa-linkedin text-md hover:text-red-500"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="flex flex-col items-center px-6">
+                    <form class="w-full sm:w-96 md:w-[32rem] lg:w-[40rem] mx-auto space-y-6">
+                        <!-- Form Fields -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                            <!-- Left Section with 2 components -->
+                            <div class="space-y-6">
+                                <!-- Name -->
+                                <div class="mb-4">
+                                    <label for="Name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="Ali Tufan" required />
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="mb-4">
+                                    <label for="Phone" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+                                    <input type="number"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="Enter Your Phone" required />
+                                </div>
+                            </div>
+
+                            <!-- Right Section with 2 components -->
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="mb-4">
+                                    <label for="interest-rate"
+                                        class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                                    <input type="email"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="creativelayer088" required />
+                                </div>
+
+                                <!-- Profession -->
+                                <div class="mb-4">
+                                    <label for="profession" class="block text-gray-700 text-sm font-bold mb-2">I'm
+                                        a</label>
+                                    <select id="profession" name="profession"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        required>
+                                        <option value="engineer">Engineer</option>
+                                        <option value="doctor">Doctor</option>
+                                        <option value="lawyer">Lawyer</option>
+                                        <option value="employee">Employee</option>
+                                        <option value="businessman">Businessman</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea
+                                class="w-full px-4 h-[200px] pt-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                placeholder="Hello, I am interested in [Renovated apartment at last floor]"
+                                required></textarea>
+                        </div>
+
+                        <!-- Agreement Checkbox -->
+                        <div class="flex items-center space-x-2">
+                            <input type="checkbox" required>
+                            <p class="text-sm">By submitting this form I agree to the Terms of Use</p>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="">
+                            <button type="submit" class="border-2 ud-btn">
+                                Request Information <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+            <!-- get contact ends -->
+
+
+
+
+            <!--  Reviews rating-->
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%] ">
+                <!-- Header Section -->
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-4 lg:space-y-0 mt-4">
+                    <!-- Rating Section -->
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        <h3 class="font-semibold text-lg text-center lg:text-left">5.0 · 3 reviews</h3>
+                    </div>
+
+                    <!-- Sort By Dropdown -->
+                    <div class="w-full lg:w-auto">
+                        <div class="flex items-center space-x-2">
+                            <label for="sort-options" class="text-gray-700 font-light text-sm">Sort by</label>
+                            <select id="sort-options" name="sort-options"
+                                class="border-gray-300 rounded-lg focus:outline-none p-2 text-sm w-full lg:w-auto">
+                                <option value="newest">Newest</option>
+                                <option value="best-seller">Best Seller</option>
+                                <option value="best-match">Best Match</option>
+                                <option value="price-low">Price Low</option>
+                                <option value="price-high">Price High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Section -->
+                <div class="space-y-10">
+                    <!-- Single Review -->
+                    <div>
+                        <div
+                            class="flex flex-col lg:flex-row justify-between items-center lg:items-start lg:space-x-6 space-y-4 lg:space-y-0">
+                            <!-- User Info -->
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="bg-gray-100 rounded-full p-4 flex items-center justify-center text-gray-700">
+                                    <h5 class="font-medium text-sm">A.T</h5>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold">Bessie Cooper</h5>
+                                    <p class="font-light text-sm">12 March 2022</p>
+                                </div>
+                            </div>
+
+                            <!-- Stars -->
+                            <div class="flex space-x-1">
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review Text -->
+                        <p class="font-light mt-4 text-gray-700">
+                            Every single thing we tried with John was delicious! Found some awesome places we would
+                            definitely go back to on our trip. John was also super friendly and passionate about
+                            Beşiktaş and Istanbul.
+                        </p>
+
+                        <!-- Images Section -->
+                        <div class=" flex flex-wrap gap-2 mt-4">
+                            <img src="./img/blog-single-4.jpg" alt="Review Image 2" class="rounded-md ">
+                            <img src="./img/blog-single-5.jpg" alt="Review Image 3" class="rounded-md ">
+                            <img src="./img/blog-single-6.jpg" alt="Review Image 4" class="rounded-md ">
+                            <img src="./img/blog-single-3.jpg" alt="Review Image 1" class="rounded-md ">
+                        </div>
+
+
+                        <!-- Feedback Section -->
+                        <div class="text-gray-500 flex space-x-6 border-b-2 pb-6 mt-4">
+                            <div class="flex items-center space-x-2 cursor-pointer">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <h5 class="text-sm">Helpful</h5>
+                            </div>
+                            <div class="flex items-center space-x-2 cursor-pointer">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <h5 class="text-sm">Not Helpful</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeated Review Template -->
+
+
+                    <div>
+                        <div
+                            class="flex flex-col lg:flex-row justify-between items-center lg:items-start lg:space-x-6 space-y-4 lg:space-y-0">
+                            <!-- User Info -->
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="bg-gray-100 rounded-full p-4 flex items-center justify-center text-gray-700">
+                                    <h5 class="font-medium text-sm">A.T</h5>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold">Bessie Cooper</h5>
+                                    <p class="font-light text-sm">12 March 2022</p>
+                                </div>
+                            </div>
+
+                            <!-- Stars -->
+                            <div class="flex space-x-1">
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review Text -->
+                        <p class="font-light mt-4 text-gray-700">
+                            Every single thing we tried with John was delicious! Found some awesome places we would
+                            definitely go back to on our trip. John was also super friendly and passionate about
+                            Beşiktaş and Istanbul.
+                        </p>
+
+                        <!-- Images Section -->
+                        <div class=" flex flex-wrap gap-2 mt-4">
+                            <img src="./img/blog-single-3.jpg" alt="Review Image 1" class="rounded-md ">
+                            <img src="./img/blog-single-4.jpg" alt="Review Image 2" class="rounded-md ">
+                            <img src="./img/blog-single-5.jpg" alt="Review Image 3" class="rounded-md ">
+                            <img src="./img/blog-single-6.jpg" alt="Review Image 4" class="rounded-md ">
+                        </div>
+
+                        <!-- Feedback Section -->
+                        <div class="text-gray-500 flex space-x-6 border-b-2 pb-6 mt-4">
+                            <div class="flex items-center space-x-2 cursor-pointer">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <h5 class="text-sm">Helpful</h5>
+                            </div>
+                            <div class="flex items-center space-x-2 cursor-pointer">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <h5 class="text-sm">Not Helpful</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy the review structure above for additional reviews -->
+                </div>
+
+                <!-- Show All Reviews Section -->
+                <div class="border-b-2 pb-6 ">
+                    <div class="flex items-center space-x-2 ud-btn  border-2 w-full sm:w-[40%] mx-auto lg:mx-0">
+                        <h4 class="font-medium text-lg">Show all 134 reviews</h4>
+                        <i class="fa-solid fa-square-up-right"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!--  Reviews rating ends-->
+
+
+            <!-- leave a Review form -->
+
+
+
+            <div class="bg-white mt-10 p-5 space-y-6 w-full rounded-md md:w-[68%]">
+                <div>
+                    <h3 class="font-semibold text-lg ml-12">Leave A Review</h3>
+                </div>
+                <div class="flex flex-col items-center px-4 sm:px-6 md:px-6">
+                    <form class="w-full sm:w-96 md:w-[32rem] lg:w-[40rem] mx-auto space-y-6">
+                        <div class="space-y-6">
+                            <!-- Email Field -->
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                                <input type="email"
+                                    class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                    placeholder="ibthemes21@gmail.com" required />
+                            </div>
+
+                            <!-- Title and Rating Fields -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Title Field -->
+                                <div>
+                                    <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                        placeholder="Enter Title" required />
+                                </div>
+
+                                <!-- Rating Field -->
+                                <div>
+                                    <label for="rating"
+                                        class="block text-gray-700 text-sm font-bold mb-2">Rating</label>
+                                    <select id="rating" name="rating"
+                                        class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required>
+                                        <option value="5-star" class="hover:bg-red-100 focus:bg-red-500">Five Star
+                                        </option>
+                                        <option value="4-star">Four Star</option>
+                                        <option value="3-star">Three Star</option>
+                                        <option value="2-star">Two Star</option>
+                                        <option value="1-star">One Star</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Review</label>
+                            <textarea
+                                class="w-full px-4 py-4 h-[200px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                                placeholder="Write a Review" required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="">
+                            <button type="submit" class="ud-btn border-2 px-6 py-3 rounded-lg">
+                                Submit Review <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- leave a Review form  ends-->
+
+
+
+            <!-- crouser start -->
+
+
+
+            <div class="mt-20 pb-20 h-[500px]">
+
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class=" font-bold text-4xl">Discover Our Featured Listings</h2>
+                        <p class=" text-xl">Aliquam lacinia diam quis lacus euismod</p>
+                    </div>
+
+
+                    <div class="pagination">
+                        <ul id="pagination-list">
+                            <li><a href="#" class="prev"><i class="fa-solid fa-arrow-left-long"></i></a></li>
+                            <!-- Pagination items will be injected here -->
+                            <li><a href="#" class="next"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="flex flex-wrap justify-center gap-6 mt-10 overflow-hidden">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white max-w-xs w-full rounded-lg shadow-md overflow-hidden">
+                      <img src="pic1.jpg" alt="Equestrian Family Home" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                        <h3 class="text-lg font-medium">Equestrian Family Home</h3>
+                        <p class="text-gray-500">New York, City, CA, USA</p>
+                        <div class="card-info flex justify-between mt-4">
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-bed mr-2"></i>
+                            <p>1 Bed</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-shower mr-2"></i>
+                            <p>2 Bath</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-brands fa-uncharted mr-2"></i>
+                            <p>1200 sqft</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer flex justify-between items-center p-4 bg-gray-100">
+                        <h3 class="text-green-500 font-medium">For Rent</h3>
+                        <div class="actions flex space-x-4">
+                          <i class="fa-solid fa-up-right-from-square cursor-pointer"></i>
+                          <i class="fa-regular fa-square-plus cursor-pointer"></i>
+                          <i class="fa-regular fa-heart cursor-pointer"></i>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 2 -->
+                    <div class="bg-white max-w-xs w-full rounded-lg shadow-md overflow-hidden">
+                      <img src="pic1.jpg" alt="Equestrian Family Home" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                        <h3 class="text-lg font-medium">Equestrian Family Home</h3>
+                        <p class="text-gray-500">New York, City, CA, USA</p>
+                        <div class="card-info flex justify-between mt-4">
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-bed mr-2"></i>
+                            <p>1 Bed</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-shower mr-2"></i>
+                            <p>2 Bath</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-brands fa-uncharted mr-2"></i>
+                            <p>1200 sqft</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer flex justify-between items-center p-4 bg-gray-100">
+                        <h3 class="text-green-500 font-medium">For Rent</h3>
+                        <div class="actions flex space-x-4">
+                          <i class="fa-solid fa-up-right-from-square cursor-pointer"></i>
+                          <i class="fa-regular fa-square-plus cursor-pointer"></i>
+                          <i class="fa-regular fa-heart cursor-pointer"></i>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 3 -->
+                    <div class="bg-white max-w-xs w-full rounded-lg shadow-md overflow-hidden">
+                      <img src="pic1.jpg" alt="Equestrian Family Home" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                        <h3 class="text-lg font-medium">Equestrian Family Home</h3>
+                        <p class="text-gray-500">New York, City, CA, USA</p>
+                        <div class="card-info flex justify-between mt-4">
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-bed mr-2"></i>
+                            <p>1 Bed</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-solid fa-shower mr-2"></i>
+                            <p>2 Bath</p>
+                          </div>
+                          <div class="info-item flex items-center">
+                            <i class="fa-brands fa-uncharted mr-2"></i>
+                            <p>1200 sqft</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer flex justify-between items-center p-4 bg-gray-100">
+                        <h3 class="text-green-500 font-medium">For Rent</h3>
+                        <div class="actions flex space-x-4">
+                          <i class="fa-solid fa-up-right-from-square cursor-pointer"></i>
+                          <i class="fa-regular fa-square-plus cursor-pointer"></i>
+                          <i class="fa-regular fa-heart cursor-pointer"></i>
+                        </div>
+                      </div>
+                    </div>
+
+
+                     <!-- Card 3 -->
+                     <div class="bg-white max-w-xs w-full rounded-lg shadow-md overflow-hidden">
+                        <img src="pic1.jpg" alt="Equestrian Family Home" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                          <h3 class="text-lg font-medium">Equestrian Family Home</h3>
+                          <p class="text-gray-500">New York, City, CA, USA</p>
+                          <div class="card-info flex justify-between mt-4">
+                            <div class="info-item flex items-center">
+                              <i class="fa-solid fa-bed mr-2"></i>
+                              <p>1 Bed</p>
+                            </div>
+                            <div class="info-item flex items-center">
+                              <i class="fa-solid fa-shower mr-2"></i>
+                              <p>2 Bath</p>
+                            </div>
+                            <div class="info-item flex items-center">
+                              <i class="fa-brands fa-uncharted mr-2"></i>
+                              <p>1200 sqft</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer flex justify-between items-center p-4 bg-gray-100">
+                          <h3 class="text-green-500 font-medium">For Rent</h3>
+                          <div class="actions flex space-x-4">
+                            <i class="fa-solid fa-up-right-from-square cursor-pointer"></i>
+                            <i class="fa-regular fa-square-plus cursor-pointer"></i>
+                            <i class="fa-regular fa-heart cursor-pointer"></i>
+                          </div>
+                        </div>
+                      </div>
+
+
+                       <!-- Card 3 -->
+                    <div class="bg-white max-w-xs w-full rounded-lg shadow-md overflow-hidden">
+                        <img src="pic1.jpg" alt="Equestrian Family Home" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                          <h3 class="text-lg font-medium">Equestrian Family Home</h3>
+                          <p class="text-gray-500">New York, City, CA, USA</p>
+                          <div class="card-info flex justify-between mt-4">
+                            <div class="info-item flex items-center">
+                              <i class="fa-solid fa-bed mr-2"></i>
+                              <p>1 Bed</p>
+                            </div>
+                            <div class="info-item flex items-center">
+                              <i class="fa-solid fa-shower mr-2"></i>
+                              <p>2 Bath</p>
+                            </div>
+                            <div class="info-item flex items-center">
+                              <i class="fa-brands fa-uncharted mr-2"></i>
+                              <p>1200 sqft</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer flex justify-between items-center p-4 bg-gray-100">
+                          <h3 class="text-green-500 font-medium">For Rent</h3>
+                          <div class="actions flex space-x-4">
+                            <i class="fa-solid fa-up-right-from-square cursor-pointer"></i>
+                            <i class="fa-regular fa-square-plus cursor-pointer"></i>
+                            <i class="fa-regular fa-heart cursor-pointer"></i>
+                          </div>
+                        </div>
+                      </div>
+                  
+                    
+                  
+                  </div>
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="">
+
+        <div>
+
+            <div class="bg-[#181a20] pt-[30px] text-white">
+                <div class="container-main flex flex-col sm:flex-row gap-4 sm:gap-16 pb-10">
+                    <!-- Left Section -->
+                    <div class="space-y-10 w-full sm:w-1/2">
+                        <img src="header-logo.svg" id="headerLogo" data-dark="./header-logo.svg"
+                            data-light="./header-logo2.svg" class="h-8 sm:h-10">
+
+                        <div class="flex flex-col sm:flex-row gap-6 mt-10">
+                            <div class="space-y-2">
+                                <p class="text-gray-400">Total Free Customer Care</p>
+                                <h3 class="font-bold text-lg">+(0) 123 050 945 02</h3>
+                            </div>
+                            <div class="space-y-2 mt-4 sm:mt-0">
+                                <p class="text-gray-400">Need Live Support?</p>
+                                <h3 class="font-bold text-lg">hi@homez.com</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-xl">Apps</h4>
+                            <div class="mt-2 flex gap-4">
+                                <button class="flex items-center gap-4 bg-black app-info px-7 py-3 hover:bg-[#eb6753]">
+                                    <i class="fa-brands fa-apple text-4xl"></i>
+                                    <span>
+                                        <p class="text-gray-600">Download on the</p>
+                                        <p class="font-bold">Apple Store</p>
+                                    </span>
+                                </button>
+                                <button class="flex items-center gap-4 bg-black app-info px-10 py-3 hover:bg-[#eb6753]">
+                                    <i class="fa-brands fa-google-play text-4xl"></i>
+                                    <span>
+                                        <p class="text-gray-600">Get it on</p>
+                                        <p class="font-bold">Google Play</p>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <h4 class="mt-5 font-bold">Follow us on social media</h4>
+                            <div class="mt-10 flex space-x-10 text-gray-400">
+                                <i
+                                    class="fa-brands fa-facebook-f transform transition-transform duration-600 hover:scale-110"></i>
+                                <i
+                                    class="fa-brands fa-twitter transform transition-transform duration-600 hover:scale-110"></i>
+                                <i
+                                    class="fa-brands fa-instagram transform transition-transform duration-600 hover:scale-110"></i>
+                                <i
+                                    class="fa-brands fa-linkedin-in transform transition-transform duration-600 hover:scale-110"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="items-center sm:w-1/2">
+                        <h4 class="font-bold text-md mb-4">Keep Yourself Up to Date</h4>
+                        <div class="p-6 rounded-xl bg-black">
+                            <input type="search" placeholder="Your Email"
+                                class="text-gray-400 sub w-full sm:w-96 py-2 focus:outline-none rounded-lg">
+                            <label for="subscribe" class="font-bold text-lg">Subscribe</label>
+                        </div>
+
+                        <div class="mt-10 flex justify-between flex-wrap sm:flex-nowrap">
+                            <!-- Popular Search -->
+                            <div>
+                                <h5 class="font-bold">Popular Search</h5>
+                                <div class="text-gray-400 space-y-5 mt-4">
+                                    <p>Apartment for Rent</p>
+                                    <p>Apartment Low to Hide</p>
+                                    <p>Offices for Buy</p>
+                                    <p>Offices for Rent</p>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div>
+                                <h5 class="font-bold">Quick Links</h5>
+                                <div class="text-gray-400 space-y-5 mt-4">
+                                    <p>Terms of Use</p>
+                                    <p>Privacy Policy</p>
+                                    <p>Pricing Plans</p>
+                                    <p>Our Services</p>
+                                    <p>Contact Support</p>
+                                    <p>Careers</p>
+                                    <p>FAQs</p>
+                                </div>
+                            </div>
+
+                            <!-- Discover -->
+                            <div>
+                                <h5 class="font-bold">Discover</h5>
+                                <div class="text-gray-400 space-y-5 mt-4">
+                                    <p>Miami</p>
+                                    <p>Los Angeles</p>
+                                    <p>Chicago</p>
+                                    <p>New York</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="container-main">
+                    <div class="w-full">
+                        <p class="border-t-2 border-gray-400"></p>
+                    </div>
+                    <div class="flex justify-between items-center mt-10 mb-4 flex-wrap">
+                        <div class="flex flex-wrap items-center">
+                            <p class="text-gray-400">© Homez 2024</p>
+                            <a href="https://themeforest.net/user/ib-themes" class="ml-2 text-gray-400">ib-themes</a>
+                            <p class="text-gray-400"> - All rights reserved</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400">Privacy · Terms · Sitemap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="home.js"></script>
+    <script src="Home2.js"></script>
+
+    <!-- floor -->
+
+    <script>
+        function toggleFloor(element) {
+            const content = element.nextElementSibling;
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                content.style.maxHeight = content.scrollHeight + 'px'; // Expand to actual height
+            } else {
+                content.style.maxHeight = '0'; // Collapse
+                setTimeout(() => content.classList.add('hidden'), 1000); // Hide after transition
+            }
+        }
+    </script>
+
+
+
+    <!-- video -->
+    <script>
+        function showVideo() {
+            const videoOverlay = document.getElementById('videoOverlay');
+            videoOverlay.classList.remove('hidden');
+        }
+
+        function hideVideo() {
+            const videoOverlay = document.getElementById('videoOverlay');
+            videoOverlay.classList.add('hidden');
+        }
+    </script>
+
+    <!-- education healt & medical -->
+
+    <script>
+        function showContent(tab) {
+            // Hide all tab content
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.add('hidden'));
+
+            // Show the clicked tab's content
+            const activeTabContent = document.getElementById(tab);
+            activeTabContent.classList.remove('hidden');
+
+            // Remove active styles from all tabs
+            const allTabs = document.querySelectorAll('.tab');
+            allTabs.forEach(tab => {
+                tab.classList.remove('border-b-2', 'border-black', 'text-black');
+                tab.classList.add('text-gray-500');
+            });
+
+            // Add active styles to the clicked tab
+            const clickedTab = document.getElementById(tab + '-tab');
+            clickedTab.classList.add('border-b-2', 'border-black', 'text-black');
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- carts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart.js Configuration with Dual Y-Axes
+        const ctx = document.getElementById('dualYAxisChart').getContext('2d');
+
+        // Function to calculate the ratio Pv/Uv for each data point
+        function calculateRatio(pvData, uvData) {
+            return pvData.map((pv, index) => pv / uvData[index]);
+        }
+
+        // Chart Data with Ratios Added
+        const chartData = {
+            hours: {
+                labels: ['PageA', 'PageB', 'PageC', 'PageD', 'PageE', 'PageF', 'PageG'],
+                datasets: [
+                    {
+                        label: 'Pv (Left Axis)',
+                        data: [1200, 2500, 4000, 5500, 8000, 9500, 10000],
+                        backgroundColor: 'rgba(174, 85, 255, 0.5)',
+                        borderColor: 'rgba(186, 85, 255, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y1'
+                    },
+                    {
+                        label: 'Uv',
+                        data: [500, 1000, 1500, 2000, 2500, 3000, 3500],
+                        backgroundColor: 'rgba(60, 179, 113, 0.7)',
+                        borderColor: 'rgba(60, 179, 113, 0.7)',
+                        borderWidth: 1,
+                        yAxisID: 'y2'
+                    },
+                    {
+                        label: 'Pv/Uv Ratio',
+                        data: calculateRatio([1200, 2500, 4000, 5500, 8000, 9500, 10000], [500, 1000, 1500, 2000, 2500, 3000, 3500]),
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',  // New color for the ratio chart
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y3'
+                    }
+                ]
+            },
+            weekly: {
+                labels: ['PageA', 'PageB', 'PageC', 'PageD', 'PageE', 'PageF', 'PageG'],
+                datasets: [
+                    {
+                        label: 'Pv (Left Axis)',
+                        data: [5000, 6000, 7000, 8000, 9000, 10000, 11000],
+                        backgroundColor: 'rgba(174, 85, 255, 0.5)',
+                        borderColor: 'rgba(186, 85, 255, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y1'
+                    },
+                    {
+                        label: 'Uv',
+                        data: [1500, 2000, 2500, 3000, 3500, 4000, 4500],
+                        backgroundColor: 'rgba(60, 179, 113, 0.7)',
+                        borderColor: 'rgba(60, 179, 113, 0.7)',
+                        borderWidth: 1,
+                        yAxisID: 'y2'
+                    },
+                    {
+                        label: 'Pv/Uv Ratio',
+                        data: calculateRatio([5000, 6000, 7000, 8000, 9000, 10000, 11000], [1500, 2000, 2500, 3000, 3500, 4000, 4500]),
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y3'
+                    }
+                ]
+            },
+            monthly: {
+                labels: ['PageA', 'PageB', 'PageC', 'PageD', 'PageE', 'PageF', 'PageG'],
+                datasets: [
+                    {
+                        label: 'Pv (Left Axis)',
+                        data: [15000, 18000, 22000, 26000, 30000, 34000, 38000],
+                        backgroundColor: 'rgba(174, 85, 255, 0.5)',
+                        borderColor: 'rgba(186, 85, 255, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y1'
+                    },
+                    {
+                        label: 'Uv',
+                        data: [3000, 4000, 5000, 6000, 7000, 8000, 9000],
+                        backgroundColor: 'rgba(60, 179, 113, 0.7)',
+                        borderColor: 'rgba(60, 179, 113, 0.7)',
+                        borderWidth: 1,
+                        yAxisID: 'y2'
+                    },
+                    {
+                        label: 'Pv/Uv Ratio',
+                        data: calculateRatio([15000, 18000, 22000, 26000, 30000, 34000, 38000], [3000, 4000, 5000, 6000, 7000, 8000, 9000]),
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y3'
+                    }
+                ]
+            }
+        };
+
+        const config = {
+            type: 'bar',  // Bar chart type
+            data: chartData.hours,  // Default data (Hours)
+            options: {
+                responsive: true,
+                scales: {
+                    y1: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 10000,
+                        ticks: {
+                            stepSize: 2500
+                        },
+                        position: 'left'
+                    },
+                    y2: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 3500,
+                        ticks: {
+                            stepSize: 500
+                        },
+                        position: 'right',
+                        grid: {
+                            drawOnChartArea: false,
+                        },
+                    },
+                    y3: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 10,  // Adjust max value to fit the ratio
+                        ticks: {
+                            stepSize: 1
+                        },
+                        position: 'right',
+                        grid: {
+                            drawOnChartArea: false,
+                        },
+                    },
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            autoSkip: true,
+                            maxTicksLimit: 7
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                },
+            }
+        };
+
+        // Initialize the chart
+        let myChart = new Chart(ctx, config);
+
+        // Function to update chart data dynamically
+        function updateChart(chartType) {
+            myChart.data = chartData[chartType];
+            myChart.update();
+        }
+
+        // Button click event listeners
+        document.getElementById('hours').addEventListener('click', () => {
+            updateChart('hours');
+            setActiveButton('hours');
+        });
+
+        document.getElementById('weekly').addEventListener('click', () => {
+            updateChart('weekly');
+            setActiveButton('weekly');
+        });
+
+        document.getElementById('monthly').addEventListener('click', () => {
+            updateChart('monthly');
+            setActiveButton('monthly');
+        });
+
+        // Set active button state
+        function setActiveButton(activeId) {
+            const buttons = document.querySelectorAll('.chart-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(activeId).classList.add('active');
+        }
+
+        // Initialize with the default chart (Hours)
+        setActiveButton('hours');
+    </script>
+
+
+
+    <!-- Home Value -->
+
+
+
+    <!-- Chart.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Home Value Chart Data and Options (Smooth Line Chart with Filled Area)
+        const ctxHomeValue = document.getElementById('homeValueChartNew').getContext('2d');
+        const homeValueChartData = {
+            labels: ['PageA', 'PageB', 'PageC', 'PageD', 'PageE', 'PageF', 'PageG'],  // X-axis labels
+            datasets: [{
+                label: 'Home Value',
+                data: [2400, 1398, 9800, 3908, 4800, 3800, 4300],  // Y-axis data
+                backgroundColor: 'rgba(60, 179, 113, 0.4)',  // Light green fill
+                borderColor: 'rgba(60,179,113,0.7)',  // Green border color
+                borderWidth: 3,
+                fill: true,  // Fill the area under the line
+                tension: 0.4  // Smooth curve line
+            }]
+        };
+
+        const homeValueChartOptions = {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    min: 0,
+                    max: 10000,
+                    ticks: {
+                        stepSize: 2500  // Set tick intervals to 2500
+                    },
+                    position: 'left'
+                },
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        autoSkip: true,
+                        maxTicksLimit: 7
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+            }
+        };
+
+        // Initialize Home Value Chart
+        if (ctxHomeValue) {
+            new Chart(ctxHomeValue, {
+                type: 'line',  // Change chart type to line
+                data: homeValueChartData,
+                options: homeValueChartOptions
+            });
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

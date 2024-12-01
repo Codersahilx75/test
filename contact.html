@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-whites  ">
+
+  <!-- header start here -->
+  <div>
+    <header id="header" class="fixed top-0 left-0 w-full bg-black z-50 shadow-md transition-all duration-300">
+      <nav class="container mx-auto flex justify-between items-center py-5 px-4 lg:px-0" style="height: 70px;">
+        <div class="flex space-x-10 items-center">
+          <div>
+            <!-- Dynamic logo -->
+            <img id="headerLogo" data-dark="./header-logo.svg" data-light="./header-logo2.svg" class="h-8 sm:h-10">
+          </div>
+          <div class="hidden md:flex space-x-6 items-center">
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a href="Home.html">Home</a></p>
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a href="About.html">About</a></p>
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2">Contact</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 sm:space-x-6">
+          <div class="hidden lg:block font-bold text-xs sm:text-sm "><i class="fa-solid fa-phone mr-2"></i>2 911 098
+            7654</div>
+          <div class="hidden md:block font-bold text-xs sm:text-sm cursor-pointer"><a href="login.html">Login / Register</a></div>
+          <div class="hidden sm:block ud-btn border-2 px-4 py-2 rounded-full text-xs sm:text-sm">Add Property</div>
+          <div>
+            <img id="headerNav" data-dark="./nav-icon-dark.svg" data-light="./nav-icon-white.svg"
+              class="h-4 sm:h-4 cursor-pointer">
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!-- header ends here -->
+
+  <!-- Contact Form Section -->
+  <div class="min-h-screen flex items-center justify-center py-10 px-4">
+    <div class="bg-white shadow-lg rounded-lg max-w-lg w-full p-6">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Contact Us</h2>
+
+      <form id="contactForm" class="space-y-4" onsubmit="return validateContactForm(event)">
+        <!-- Username -->
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your name"
+            required
+          />
+          <p id="usernameError" class="hidden text-red-500 text-xs">Username is required.</p>
+        </div>
+
+        <!-- Mobile Number -->
+        <div>
+          <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your mobile number"
+            required
+          />
+          <p id="mobileError" class="hidden text-red-500 text-xs">Mobile number is required.</p>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your email"
+            required
+          />
+          <p id="emailError" class="hidden text-red-500 text-xs">Valid email is required.</p>
+        </div>
+
+        <!-- Subject -->
+        <div>
+          <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your message or query"
+            rows="4"
+            required
+          ></textarea>
+          <p id="subjectError" class="hidden text-red-500 text-xs">Subject is required.</p>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <footer class="">
+
+    <div>
+
+      <div class="bg-[#181a20] pt-[50px] text-white">
+        <div class="container-main flex flex-col sm:flex-row gap-4 sm:gap-16 pb-10">
+          <!-- Left Section -->
+          <div class="space-y-10 w-full sm:w-1/2">
+            <img src="header-logo.svg" id="headerLogo" data-dark="./header-logo.svg" data-light="./header-logo2.svg"
+              class="h-8 sm:h-10">
+
+            <div class="flex flex-col sm:flex-row gap-6 mt-10">
+              <div class="space-y-2">
+                <p class="text-gray-400">Total Free Customer Care</p>
+                <h3 class="font-bold text-lg">+(0) 123 050 945 02</h3>
+              </div>
+              <div class="space-y-2 mt-4 sm:mt-0">
+                <p class="text-gray-400">Need Live Support?</p>
+                <h3 class="font-bold text-lg">hi@homez.com</h3>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-xl">Apps</h4>
+              <div class="mt-2 flex gap-4">
+                <button class="flex items-center gap-4 bg-black app-info px-7 py-3 hover:bg-[#eb6753]">
+                  <i class="fa-brands fa-apple text-4xl"></i>
+                  <span>
+                    <p class="text-gray-600">Download on the</p>
+                    <p class="font-bold">Apple Store</p>
+                  </span>
+                </button>
+                <button class="flex items-center gap-4 bg-black app-info px-10 py-3 hover:bg-[#eb6753]">
+                  <i class="fa-brands fa-google-play text-4xl"></i>
+                  <span>
+                    <p class="text-gray-600">Get it on</p>
+                    <p class="font-bold">Google Play</p>
+                  </span>
+                </button>
+              </div>
+
+              <h4 class="mt-5 font-bold">Follow us on social media</h4>
+              <div class="mt-10 flex space-x-10 text-gray-400">
+                <i class="fa-brands fa-facebook-f transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-twitter transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-instagram transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-linkedin-in transform transition-transform duration-600 hover:scale-110"></i>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="items-center sm:w-1/2">
+            <h4 class="font-bold text-md mb-4">Keep Yourself Up to Date</h4>
+            <div class="p-6 rounded-xl bg-black">
+              <input type="search" placeholder="Your Email"
+                class="text-gray-400 sub w-full sm:w-96 py-2 focus:outline-none rounded-lg">
+              <label for="subscribe" class="font-bold text-lg">Subscribe</label>
+            </div>
+
+            <div class="mt-10 flex justify-between flex-wrap sm:flex-nowrap">
+              <!-- Popular Search -->
+              <div>
+                <h5 class="font-bold">Popular Search</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Apartment for Rent</p>
+                  <p>Apartment Low to Hide</p>
+                  <p>Offices for Buy</p>
+                  <p>Offices for Rent</p>
+                </div>
+              </div>
+
+              <!-- Quick Links -->
+              <div>
+                <h5 class="font-bold">Quick Links</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Terms of Use</p>
+                  <p>Privacy Policy</p>
+                  <p>Pricing Plans</p>
+                  <p>Our Services</p>
+                  <p>Contact Support</p>
+                  <p>Careers</p>
+                  <p>FAQs</p>
+                </div>
+              </div>
+
+              <!-- Discover -->
+              <div>
+                <h5 class="font-bold">Discover</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Miami</p>
+                  <p>Los Angeles</p>
+                  <p>Chicago</p>
+                  <p>New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="container-main">
+          <div class="w-full">
+            <p class="border-t-2 border-gray-400"></p>
+          </div>
+          <div class="flex justify-between items-center mt-10 mb-4 flex-wrap">
+            <div class="flex flex-wrap items-center">
+              <p class="text-gray-400">© Homez 2024</p>
+              <a href="https://themeforest.net/user/ib-themes" class="ml-2 text-gray-400">ib-themes</a>
+              <p class="text-gray-400"> - All rights reserved</p>
+            </div>
+            <div>
+              <p class="text-gray-400">Privacy · Terms · Sitemap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+  <script>
+    function validateContactForm(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Validation logic
+      let isValid = true;
+
+      const username = document.getElementById("username").value.trim();
+      const mobile = document.getElementById("mobile").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+
+      if (!username) {
+        document.getElementById("usernameError").classList.remove("hidden");
+        isValid = false;
+      } else {
+        document.getElementById("usernameError").classList.add("hidden");
+      }
+
+      if (!mobile || !/^\d{10}$/.test(mobile)) {
+        document.getElementById("mobileError").classList.remove("hidden");
+        isValid = false;
+      } else {
+        document.getElementById("mobileError").classList.add("hidden");
+      }
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("emailError").classList.remove("hidden");
+        isValid = false;
+      } else {
+        document.getElementById("emailError").classList.add("hidden");
+      }
+
+      if (!subject) {
+        document.getElementById("subjectError").classList.remove("hidden");
+        isValid = false;
+      } else {
+        document.getElementById("subjectError").classList.add("hidden");
+      }
+
+      if (isValid) {
+        alert("Message sent successfully!");
+        // Here, you can add the logic to send the form data to a server.
+        document.getElementById("contactForm").reset();
+      }
+    }
+  </script>
+
+
+<script src="home.js"></script>
+
+</body>
+
+</html>

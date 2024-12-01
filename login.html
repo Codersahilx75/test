@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-white ">
+
+  <!-- header start here -->
+  <div>
+    <header id="header" class="fixed top-0 left-0 w-full bg-black z-50 shadow-md transition-all duration-300">
+      <nav class="container mx-auto flex justify-between items-center py-5 px-4 lg:px-0" style="height: 70px;">
+        <div class="flex space-x-10 items-center">
+          <div>
+            <!-- Dynamic logo -->
+            <img id="headerLogo" data-dark="./header-logo.svg" data-light="./header-logo2.svg" class="h-8 sm:h-10">
+          </div>
+          <div class="hidden md:flex space-x-6 items-center">
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a href="Home.html">Home</a></p>
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a href="About.html">About</a></p>
+            <p class="font-bold text-sm sm:text-base cursor-pointer hover:border-b-2"><a href="contact.html">Contact</a></p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 sm:space-x-6">
+          <div class="hidden lg:block font-bold text-xs sm:text-sm "><i class="fa-solid fa-phone mr-2"></i>2 911 098
+            7654</div>
+          <div class="hidden md:block font-bold text-xs sm:text-sm cursor-pointer">Login / Register</div>
+          <div class="hidden sm:block ud-btn border-2 px-4 py-2 rounded-full text-xs sm:text-sm">Add Property</div>
+          <div>
+            <img id="headerNav" data-dark="./nav-icon-dark.svg" data-light="./nav-icon-white.svg"
+              class="h-4 sm:h-4 cursor-pointer">
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+
+
+  <!-- Login/Register Form -->
+ <!-- Login/Register Form -->
+  <div class="flex items-center justify-center min-h-screen pt-20">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+      <!-- Toggle Buttons -->
+      <div class="flex justify-center items-center space-x-2 mb-6">
+        <button id="loginTab" class="text-lg font-semibold text-gray-800 border-b-2 border-blue-500 focus:outline-none">
+          Login
+        </button>
+        <span class="text-lg font-semibold text-gray-500">/</span>
+        <button id="registerTab" class="text-lg font-semibold text-gray-500 border-b-2 border-transparent focus:outline-none">
+          Register
+        </button>
+      </div>
+
+      <!-- Form -->
+      <form id="form" onsubmit="return validateForm(event)">
+        <!-- Full Name (Register Only) -->
+        <div id="fullNameField" class="mb-4 hidden">
+          <label for="fullname" class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your full name"
+          />
+          <p id="fullNameError" class="text-red-500 text-xs hidden">Full name is required.</p>
+        </div>
+
+        <!-- Mobile Number (Register Only) -->
+        <div id="mobileField" class="mb-4 hidden">
+          <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+          <input
+            type="number"
+            name="mobile"
+            id="mobile"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your mobile number"
+          />
+          <p id="mobileError" class="text-red-500 text-xs hidden">Mobile number is required.</p>
+        </div>
+
+        <!-- Email -->
+        <div id="emailField" class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your email"
+          />
+          <p id="emailError" class="text-red-500 text-xs hidden">Email is required.</p>
+        </div>
+
+        <!-- Password -->
+        <div id="passwordField" class="mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Enter your password"
+          />
+          <p id="passwordError" class="text-red-500 text-xs hidden">Password is required.</p>
+        </div>
+
+        <!-- Confirm Password (Register Only) -->
+        <div id="confirmPasswordField" class="mb-4 hidden">
+          <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            placeholder="Confirm your password"
+          />
+          <p id="confirmPasswordError" class="text-red-500 text-xs hidden">Passwords must match.</p>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          id="submitButton"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Login
+        </button>
+
+
+      </form>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="">
+
+    <div>
+
+      <div class="bg-[#181a20] pt-[50px] text-white">
+        <div class="container-main flex flex-col sm:flex-row gap-4 sm:gap-16 pb-10">
+          <!-- Left Section -->
+          <div class="space-y-10 w-full sm:w-1/2">
+            <img src="header-logo.svg" id="headerLogo" data-dark="./header-logo.svg" data-light="./header-logo2.svg"
+              class="h-8 sm:h-10">
+
+            <div class="flex flex-col sm:flex-row gap-6 mt-10">
+              <div class="space-y-2">
+                <p class="text-gray-400">Total Free Customer Care</p>
+                <h3 class="font-bold text-lg">+(0) 123 050 945 02</h3>
+              </div>
+              <div class="space-y-2 mt-4 sm:mt-0">
+                <p class="text-gray-400">Need Live Support?</p>
+                <h3 class="font-bold text-lg">hi@homez.com</h3>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-xl">Apps</h4>
+              <div class="mt-2 flex gap-4">
+                <button class="flex items-center gap-4 bg-black app-info px-7 py-3 hover:bg-[#eb6753]">
+                  <i class="fa-brands fa-apple text-4xl"></i>
+                  <span>
+                    <p class="text-gray-600">Download on the</p>
+                    <p class="font-bold">Apple Store</p>
+                  </span>
+                </button>
+                <button class="flex items-center gap-4 bg-black app-info px-10 py-3 hover:bg-[#eb6753]">
+                  <i class="fa-brands fa-google-play text-4xl"></i>
+                  <span>
+                    <p class="text-gray-600">Get it on</p>
+                    <p class="font-bold">Google Play</p>
+                  </span>
+                </button>
+              </div>
+
+              <h4 class="mt-5 font-bold">Follow us on social media</h4>
+              <div class="mt-10 flex space-x-10 text-gray-400">
+                <i class="fa-brands fa-facebook-f transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-twitter transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-instagram transform transition-transform duration-600 hover:scale-110"></i>
+                <i class="fa-brands fa-linkedin-in transform transition-transform duration-600 hover:scale-110"></i>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="items-center sm:w-1/2">
+            <h4 class="font-bold text-md mb-4">Keep Yourself Up to Date</h4>
+            <div class="p-6 rounded-xl bg-black">
+              <input type="search" placeholder="Your Email"
+                class="text-gray-400 sub w-full sm:w-96 py-2 focus:outline-none rounded-lg">
+              <label for="subscribe" class="font-bold text-lg">Subscribe</label>
+            </div>
+
+            <div class="mt-10 flex justify-between flex-wrap sm:flex-nowrap">
+              <!-- Popular Search -->
+              <div>
+                <h5 class="font-bold">Popular Search</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Apartment for Rent</p>
+                  <p>Apartment Low to Hide</p>
+                  <p>Offices for Buy</p>
+                  <p>Offices for Rent</p>
+                </div>
+              </div>
+
+              <!-- Quick Links -->
+              <div>
+                <h5 class="font-bold">Quick Links</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Terms of Use</p>
+                  <p>Privacy Policy</p>
+                  <p>Pricing Plans</p>
+                  <p>Our Services</p>
+                  <p>Contact Support</p>
+                  <p>Careers</p>
+                  <p>FAQs</p>
+                </div>
+              </div>
+
+              <!-- Discover -->
+              <div>
+                <h5 class="font-bold">Discover</h5>
+                <div class="text-gray-400 space-y-5 mt-4">
+                  <p>Miami</p>
+                  <p>Los Angeles</p>
+                  <p>Chicago</p>
+                  <p>New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="container-main">
+          <div class="w-full">
+            <p class="border-t-2 border-gray-400"></p>
+          </div>
+          <div class="flex justify-between items-center mt-10 mb-4 flex-wrap">
+            <div class="flex flex-wrap items-center">
+              <p class="text-gray-400">© Homez 2024</p>
+              <a href="https://themeforest.net/user/ib-themes" class="ml-2 text-gray-400">ib-themes</a>
+              <p class="text-gray-400"> - All rights reserved</p>
+            </div>
+            <div>
+              <p class="text-gray-400">Privacy · Terms · Sitemap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+
+
+ // Toggle between Login and Register forms
+ const loginTab = document.getElementById("loginTab");
+ const registerTab = document.getElementById("registerTab");
+ const fullNameField = document.getElementById("fullNameField");
+ const mobileField = document.getElementById("mobileField");
+ const confirmPasswordField = document.getElementById("confirmPasswordField");
+ const submitButton = document.getElementById("submitButton");
+
+ loginTab.addEventListener("click", () => {
+   fullNameField.classList.add("hidden");
+   mobileField.classList.add("hidden");
+   confirmPasswordField.classList.add("hidden");
+   submitButton.textContent = "Login";
+   loginTab.classList.add("text-gray-800", "border-blue-500");
+   registerTab.classList.remove("text-gray-800", "border-blue-500");
+ });
+
+ registerTab.addEventListener("click", () => {
+   fullNameField.classList.remove("hidden");
+   mobileField.classList.remove("hidden");
+   confirmPasswordField.classList.remove("hidden");
+   submitButton.textContent = "Register";
+   registerTab.classList.add("text-gray-800", "border-blue-500");
+   loginTab.classList.remove("text-gray-800", "border-blue-500");
+ });
+
+ // Form validation function
+ function validateForm(event) {
+   event.preventDefault(); // Prevent form submission
+
+   // Clear previous error messages
+   const errorMessages = document.querySelectorAll('.text-red-500');
+   errorMessages.forEach(message => message.classList.add('hidden'));
+
+   let isValid = true;
+
+   // Validate Full Name (only alphabets, 3-7 characters)
+   const fullName = document.getElementById("fullname").value;
+   const fullNameRegex = /^[A-Za-z\s]+$/; // Only alphabets and spaces allowed
+   if (fullName === "") {
+     document.getElementById("fullNameError").classList.remove("hidden");
+     document.getElementById("fullNameError").textContent = "Full name is required.";
+     isValid = false;
+   } else if (!fullNameRegex.test(fullName)) {
+     document.getElementById("fullNameError").classList.remove("hidden");
+     document.getElementById("fullNameError").textContent = "Full name must contain only alphabets.";
+     isValid = false;
+   } else if (fullName.length < 3 || fullName.length > 7) {
+     document.getElementById("fullNameError").classList.remove("hidden");
+     document.getElementById("fullNameError").textContent = "Full name must be between 3 and 7 characters.";
+     isValid = false;
+   }
+
+   // Validate Mobile Number (10 digits)
+   const mobile = document.getElementById("mobile").value;
+   if (mobile === "") {
+     document.getElementById("mobileError").classList.remove("hidden");
+     document.getElementById("mobileError").textContent = "Mobile number is required.";
+     isValid = false;
+   } else if (mobile.length !== 10) {
+     document.getElementById("mobileError").classList.remove("hidden");
+     document.getElementById("mobileError").textContent = "Mobile number must be 10 digits.";
+     isValid = false;
+   }
+
+   // Validate Email (must be a strong email format)
+   const email = document.getElementById("email").value;
+   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+   if (email === "") {
+     document.getElementById("emailError").classList.remove("hidden");
+     document.getElementById("emailError").textContent = "Email is required.";
+     isValid = false;
+   } else if (!emailRegex.test(email)) {
+     document.getElementById("emailError").classList.remove("hidden");
+     document.getElementById("emailError").textContent = "Please enter a valid email address (e.g., example@domain.com).";
+     isValid = false;
+   }
+
+   // Validate Password (at least 8 characters, must be strong)
+   const password = document.getElementById("password").value;
+   const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+   if (password === "") {
+     document.getElementById("passwordError").classList.remove("hidden");
+     document.getElementById("passwordError").textContent = "Password is required.";
+     isValid = false;
+   } else if (!passwordRegex.test(password)) {
+     document.getElementById("passwordError").classList.remove("hidden");
+     document.getElementById("passwordError").textContent = "Password must be at least 8 characters long and include a mix of letters, numbers, and special characters.";
+     isValid = false;
+   }
+
+   // Validate Confirm Password (only for Register)
+   const confirmPassword = document.getElementById("confirmPassword").value;
+   if (confirmPassword !== password) {
+     document.getElementById("confirmPasswordError").classList.remove("hidden");
+     document.getElementById("confirmPasswordError").textContent = "Passwords must match.";
+     isValid = false;
+   }
+
+   // If form is valid, show success message and reset form
+   if (isValid) {
+     alert("Form submitted successfully!");
+     
+     // Reset the form and clear validation messages
+     const form = document.getElementById("form");
+     form.reset();
+
+     // Manually hide error messages after reset
+     errorMessages.forEach(message => message.classList.add('hidden'));
+
+     // Optionally, you can reset any tab selections or other UI elements if necessary
+     loginTab.classList.remove("text-gray-800", "border-blue-500");
+     registerTab.classList.remove("text-gray-800", "border-blue-500");
+   }
+
+   return isValid;
+ }
+
+ // Attach the validation function to the form's submit event
+ const form = document.getElementById("form");
+ form.addEventListener("submit", validateForm);
+
+
+
+
+
+
+
+
+
+ 
+
+  </script>
+
+  
+  <script src="home.js"></script>
+</body>
+
+</html>
